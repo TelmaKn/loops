@@ -1,0 +1,218 @@
+/////////////////// MAIN //////////////////////
+
+.main-container {
+    padding: 0;  
+    .main-titles {
+      color: $--text-color-dark;
+      font-size: 3.2rem;
+      letter-spacing: 0.3rem;
+      line-height: 3.4rem;
+      margin-bottom: 31px;
+      text-align: center;
+      @media (min-width: 1200px) {
+        font-size: 4.2rem;
+        line-height: 4.5rem;
+      }
+    }  
+  }
+  
+  ////////////// PRIMARY SECTION ////////////////
+
+  .primary-section { 
+    @media (min-width: 1200px) {
+      display: grid;
+      margin-bottom: 150px;
+    }
+    .primary-section-img {
+      background-image: url("../../../images/mobile/image-interactive.jpg");
+      background-size: contain;
+      display: flex;
+      margin-bottom: 48px;
+      margin: 0 auto;
+      width: auto;
+
+      @media (min-width: 1200px) {
+        background-image: url("../../../images/desktop/image-interactive.jpg");
+        display: flex;
+        height: auto;
+        justify-content: start;
+        margin: 0;
+        width: 65%;
+      }   
+    }
+    .primary-section-text-content {
+      @media (min-width: 1200px) {
+        width: 50%;
+        flex-direction: column;
+        justify-self: end;
+        margin-top: -305px;
+        background-color: $--text-color-light;
+        padding: 100px 0 0 100px;
+      }
+    .main-titles {
+      margin-top: 55px;
+      @media (min-width: 1200px) {
+        text-align: start;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+      }    
+   }
+    p {
+      color: $--color-darkGray;
+      font-family: $secundary-font;
+      font-size: 1.5rem;
+      letter-spacing: 0.02rem;
+      line-height: 2.4rem;
+      margin: 0 auto 100px;
+      text-align: center;
+      width: 89%;
+      @media (min-width: 1200px) {
+        text-align: start;
+        padding: 0;
+        margin: 0;
+        font-size: 1.6rem;
+        letter-spacing: 0.023rem;
+        line-height: 2.5rem;
+        width: 100%;
+      }
+    }
+  }
+}
+  
+/////////////// SECONDARY SECTION ///////////////
+
+  .secondary-section {   
+    .secondary-section_cards {
+      @media (min-width: 750px) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .text-container {
+      @media (min-width: 750px) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      }
+    }
+    .main-titles {
+      margin-bottom: 55px;
+    }
+    .img-text {
+      color: $--text-color-light;
+      font-size: 2.4rem;
+      margin: 0px;
+      text-transform: uppercase;      
+    }
+    .image {
+      align-items: flex-end;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      height: 120px;
+      margin-bottom: 23px;
+      padding-bottom: 20px;
+      padding-left: 22px;
+      transition: all 0.1s ease-in-out;
+      @media (min-width: 750px) {
+        height: 350px;
+        width: 23%;
+      }
+      @media (min-width: 750px) {
+        height: 450px;
+      }
+    }
+    .image:hover{
+       background-color: rgba(255, 255, 255, 0.658);
+       background-blend-mode:lighten;
+    }
+    .image:hover > .img-text{
+      color: rgb(66, 66, 66);
+      font-weight: 600;      
+    }
+  
+    .deepearth {
+      background-image: url("../../../images/mobile/image-deep-earth.jpg");
+        @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-deep-earth.jpg");
+      }
+    }
+    .nightarcade {
+      background-image: url("../../../images/mobile/image-night-arcade.jpg");
+      @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-night-arcade.jpg");
+      }
+    }
+    .soccerteam {
+      background-image: url("../../../images/mobile/image-soccer-team.jpg");
+      @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-soccer-team.jpg");
+      }
+    }
+    .grid {
+      background-image: url("../../../images/mobile/image-grid.jpg");
+      @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-grid.jpg");
+      }
+    }
+    .fromabove {
+      background-image: url("../../../images/mobile/image-from-above.jpg");
+      @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-from-above.jpg");
+      }
+    }
+    .pocketborealis {
+      background-image: url("../../../images/mobile/image-pocket-borealis.jpg");
+      @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-pocket-borealis.jpg");
+      }
+    }
+    .curiosity {
+      background-image: url("../../../images/mobile/image-curiosity.jpg");
+      @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-curiosity.jpg");
+      }
+    }
+    .fisheye {
+      background-image: url("../../../images/mobile/image-fisheye.jpg");
+      @media (min-width: 750px) {
+        background-image: url("../../../images/desktop/image-fisheye.jpg");
+      }
+    }
+    
+  /////////////////// BUTTONS //////////////////
+
+    .see-all-button {
+      align-items: center;
+      background-color: transparent;
+      color: $--text-color-dark;
+      display: flex;
+      font-size: 1.5rem;
+      font-weight: bold;
+      height: 40px;
+      justify-content: center;
+      letter-spacing: 0.5rem;
+      margin: 33px auto 96px;
+      text-transform: uppercase;
+      width: 156px;
+    }
+    .see-all-button:hover{
+      background-color: $--text-color-dark;
+      color: $--text-color-light;
+    }
+    .see-all-button-up {
+      display: none;
+    }
+    @media (min-width: 750px) {
+      .see-all-button-down {
+        display: none;
+      }  
+      .see-all-button-up {
+        display: flex;
+        margin: 0;
+        margin-bottom: 55px;
+      }
+    }
+  }
